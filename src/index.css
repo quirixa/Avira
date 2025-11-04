@@ -8,37 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 8%;
-    --foreground: 180 100% 95%;
+    --background: 217 100% 15%;
+    --foreground: 0 0% 100%;
 
-    --card: 220 20% 12%;
-    --card-foreground: 180 100% 95%;
+    --card: 217 80% 20%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 220 25% 10%;
-    --popover-foreground: 180 100% 95%;
+    --popover: 217 100% 18%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 220 25% 8%;
+    --primary: 217 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 280 70% 60%;
-    --secondary-foreground: 180 100% 95%;
+    --secondary: 217 80% 35%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 20%;
-    --muted-foreground: 180 30% 70%;
+    --muted: 217 60% 25%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 180 100% 40%;
-    --accent-foreground: 220 25% 8%;
+    --accent: 51 100% 50%;
+    --accent-foreground: 217 100% 15%;
 
     --destructive: 0 80% 60%;
-    --destructive-foreground: 180 100% 95%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 15%;
-    --ring: 180 100% 50%;
+    --border: 217 50% 30%;
+    --input: 217 60% 22%;
+    --ring: 51 100% 50%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
-    /* Game-specific colors */
+    --gradient-start: 217 100% 15%;
+    --gradient-end: 217 100% 35%;
+    
     --game-neon: 180 100% 50%;
     --game-enemy: 0 80% 60%;
     --game-health: 120 60% 50%;
@@ -53,5 +55,10 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
   }
 }
