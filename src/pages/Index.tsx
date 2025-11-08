@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Game } from "@/components/Game";
-import { Landing } from "@/components/Landing";
+import { LandingDark } from "@/components/Landing";
 
 const Index = () => {
   const [showGame, setShowGame] = useState(false);
@@ -13,7 +13,7 @@ const Index = () => {
     );
   }
 
-  return <Landing onPlayClick={() => setShowGame(true)} />;
+  return <LandingDark onPlayClick={() => setShowGame(true)} />;
 };
 
 export default Index;
