@@ -13,7 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 const sidebarItems = [
-  { icon: Home, label: "HUB", path: "/" },
+  { icon: Home, label: "HUB", path: "/HUB/leaderboard" },
   { icon: ShoppingBag, label: "STORE", path: "/store" },
   { icon: Server, label: "SERVERS", path: "/servers" },
   { icon: Trophy, label: "QUESTS", path: "/quests" },

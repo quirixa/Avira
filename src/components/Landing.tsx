@@ -47,12 +47,11 @@ export const LandingDark = ({ onPlayClick }: LandingProps) => {
   const [selectedServer, setSelectedServer] = useState("EU");
 
   const sidebarItems = [
-    { icon: Home, label: "HUB", path: "/" },
-    { icon: ShoppingCart, label: "STORE", path: "/" },
-    { icon: Server, label: "SERVERS", path: "/" },
-    { icon: Trophy, label: "LEADERBOARD", path: "/leaderboard" },
-    { icon: Users, label: "FRIENDS", path: "/" },
-    { icon: Package, label: "INVENTORY", path: "/" },
+    { icon: Home, label: "HUB", path: "/leaderboard" },
+    { icon: ShoppingCart, label: "STORE", path: "/store" },
+    { icon: Server, label: "SERVERS", path: "/servers" },
+    { icon: Users, label: "FRIENDS", path: "/friends" },
+    { icon: Package, label: "INVENTORY", path: "/inventory" },
     { icon: Map, label: "MAP", path: "/" },
   ];
 
