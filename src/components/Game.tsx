@@ -298,8 +298,8 @@ export const Game = () => {
       if (!isDead) {
         // Player movement
         direction.set(0, 0, 0);
-        if (keys['w']) direction.z -= 1;
-        if (keys['s']) direction.z += 1;
+        if (keys['w']) direction.z += 1;
+        if (keys['s']) direction.z -= 1;
         if (keys['a']) direction.x -= 1;
         if (keys['d']) direction.x += 1;
         direction.normalize();

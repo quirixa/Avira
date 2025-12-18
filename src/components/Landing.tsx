@@ -107,29 +107,6 @@ export const LandingDark = ({ onPlayClick }: LandingProps) => {
             <p className="text-sm text-cyan-300 font-semibold mt-1">Next-Gen Browser FPS</p>
           </div>
 
-          {/* Party slots */}
-          <div className="absolute -left-12 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20">
-            {/* Left three small add-party cards (stylized) */}
-            {[0,1,2].map(i => (
-              <div key={i} className="w-44 h-28 rounded-lg border border-white/8 bg-white/2 flex items-center justify-center">
-                <div className="flex flex-col items-center text-white/70">
-                  <div className="text-2xl font-bold">+</div>
-                  <div className="text-xs font-semibold mt-1">ADD PARTY</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="absolute -right-12 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20">
-            {/* Right add party */}
-            <div className="w-44 h-28 rounded-lg border border-white/8 bg-white/2 flex items-center justify-center">
-              <div className="flex flex-col items-center text-white/70">
-                <div className="text-2xl font-bold">+</div>
-                <div className="text-xs font-semibold mt-1">ADD PARTY</div>
-              </div>
-            </div>
-          </div>
-
           {/* Player model canvas + pedestal card */}
           <div className="mx-auto w-[520px] h-[420px] rounded-2xl border border-white/8 bg-gradient-to-b from-white/2 to-transparent shadow-2xl relative overflow-hidden">
             {/* subtle ring/pedestal */}
